@@ -596,11 +596,12 @@ a:hover {
 }
 
 .greenbox-start {
-  max-height: none;
   min-height: 105vh;
   background-color: #269b28;
-  justify-content: space-between;
-  padding: 5% 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 5%;
   display: flex;
   overflow: hidden;
 }
@@ -625,16 +626,15 @@ a:hover {
 .div-block {
   min-width: 60vw;
   align-self: flex-end;
-  padding-bottom: 10%;
 }
 
 .face-desi {
   z-index: 5;
   max-width: 30%;
   min-width: 30%;
-  padding-top: 5%;
+  padding-top: 0%;
   position: relative;
-  transform: translate(-20%);
+  transform: translate(-20%, -22%);
 }
 
 .face-desi.mobile {
@@ -1088,6 +1088,29 @@ a:hover {
   overflow: hidden;
 }
 
+.header-cv {
+  min-width: 100vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+}
+
+.navcenterbox-cv {
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+}
+
+.leer {
+  max-height: 1vh;
+  min-height: 1vh;
+  min-width: 100vw;
+}
+
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 4.5rem;
@@ -1182,20 +1205,21 @@ a:hover {
     flex: 0 auto;
   }
 
+  .greenbox-start {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .cv-white.datum {
     text-align: left;
     line-height: .6em;
-  }
-
-  .div-block {
-    padding-bottom: 6%;
   }
 
   .face-desi {
     max-width: 26%;
     min-width: 26%;
     padding-top: 3%;
-    transform: translate(-6%);
+    transform: translate(0%, -26%);
   }
 
   .redbox-wein {
@@ -1296,6 +1320,11 @@ a:hover {
   .karte, .back-karte, .image-17 {
     border-radius: 50px;
   }
+
+  .navcenterbox-cv {
+    min-width: 100vw;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1369,11 +1398,8 @@ a:hover {
   }
 
   .greenbox-start {
-    padding: 10%;
-  }
-
-  .div-block {
-    padding-bottom: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 
   .face-desi {
@@ -1381,6 +1407,7 @@ a:hover {
     min-width: 50%;
     position: static;
     right: 10px;
+    transform: translate(-30%, -50%);
   }
 
   .redbox-wein {
@@ -1499,6 +1526,11 @@ a:hover {
 
   .image-13-groesser {
     max-width: 75%;
+  }
+
+  .header-cv {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -1660,6 +1692,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0%;
   }
 
   .cv-white {
@@ -1773,6 +1806,17 @@ a:hover {
   .gameboy-text {
     font-size: 1rem;
     line-height: 1.1em;
+  }
+
+  .header-cv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navcenterbox-cv {
+    margin-bottom: 5%;
+    padding-bottom: 0%;
   }
 }
 
@@ -2039,7 +2083,8 @@ a:hover {
   }
 
   .greenbox-start {
-    padding: 5% 8% 25%;
+    justify-content: flex-start;
+    padding: 10% 8% 25%;
   }
 
   .cv-white {
@@ -2274,6 +2319,16 @@ a:hover {
 
   .heading-9 {
     font-size: 7.5rem;
+  }
+
+  .header-cv {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navcenterbox-cv {
+    margin-bottom: 15%;
+    padding-top: 0%;
   }
 }
 
