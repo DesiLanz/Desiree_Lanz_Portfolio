@@ -1107,9 +1107,10 @@ a:hover {
 }
 
 .leer {
-  max-height: 1vh;
   min-height: 1vh;
   min-width: 100vw;
+  flex: 1;
+  align-self: stretch;
 }
 
 @media screen and (min-width: 1440px) {
