@@ -1124,6 +1124,7 @@ a:hover {
 }
 
 .image-18 {
+  max-height: 1.5rem;
   max-width: 1.5rem;
   flex: 0 auto;
 }
@@ -1138,6 +1139,7 @@ a:hover {
 }
 
 .logo-2 {
+  max-height: 1.5rem;
   max-width: 1.5rem;
   flex: 0 auto;
 }
@@ -1978,6 +1980,7 @@ a:hover {
   }
 
   .logo-2 {
+    max-height: 3rem;
     max-width: 3rem;
   }
 
@@ -2537,6 +2540,7 @@ a:hover {
   }
 
   .logo-2 {
+    max-height: 1.5rem;
     max-width: 1.5rem;
   }
 
