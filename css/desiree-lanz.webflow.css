@@ -163,8 +163,12 @@ a:hover {
 }
 
 .navcenterbox {
+  grid-column-gap: .5vw;
+  grid-row-gap: .5vw;
+  justify-content: flex-start;
   padding-top: 2%;
   padding-bottom: 2%;
+  display: flex;
 }
 
 .navunten {
@@ -545,23 +549,25 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2% 5%;
   display: flex;
   overflow: hidden;
 }
 
 .bildbox5-image-u {
   max-width: 17%;
+  border-radius: 16px;
 }
 
 .bildbox5-image-d {
   max-width: 17%;
-  padding-top: 8%;
+  border-radius: 16px;
+  margin-top: 8%;
 }
 
 .bildbox3-al {
   max-height: 70vh;
+  border-radius: 20px;
 }
 
 .image-10 {
@@ -590,8 +596,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 8%;
+  padding-right: 8%;
   display: flex;
 }
 
@@ -609,7 +615,7 @@ a:hover {
 .cv-white {
   color: #fff;
   letter-spacing: .01em;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .025em;
   -webkit-text-stroke-color: #000;
   font-family: Modak, sans-serif;
   line-height: .9em;
@@ -1113,6 +1119,70 @@ a:hover {
   align-self: stretch;
 }
 
+.shadow {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, .15);
+}
+
+.image-18 {
+  max-width: 1.5rem;
+  flex: 0 auto;
+}
+
+.navcenterbox-home {
+  grid-column-gap: .5vw;
+  grid-row-gap: .5vw;
+  justify-content: flex-start;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+}
+
+.logo-2 {
+  max-width: 1.5rem;
+  flex: 0 auto;
+}
+
+.pfeil-zur-ck {
+  max-width: 1.5em;
+  transform: rotate(-90deg);
+}
+
+.pfeil-weiter {
+  max-width: 1.5em;
+  display: block;
+  transform: rotate(90deg);
+}
+
+.link-block-3, .link-block-4 {
+  display: none;
+}
+
+.navobenprojekte-blish {
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+}
+
+.navcenterbox-start {
+  grid-column-gap: 10vw;
+  grid-row-gap: 10vw;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+}
+
+.bstickt-link {
+  align-self: stretch;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 4.5rem;
@@ -1144,8 +1214,7 @@ a:hover {
   }
 
   .textbox-100 {
-    padding-left: 20%;
-    padding-right: 20%;
+    max-width: 1440px;
   }
 
   .textbox-50 {
@@ -1168,10 +1237,24 @@ a:hover {
   }
 
   .home-titel {
+    max-width: 1440px;
+    align-self: center;
     font-size: 2.3rem;
   }
 
-  .namezusatz, .h1-15em {
+  .name-1, .name-2 {
+    max-width: 1440px;
+  }
+
+  .namezusatz {
+    font-size: 3rem;
+  }
+
+  .projektkarte:hover {
+    transform: none;
+  }
+
+  .h1-15em {
     font-size: 3rem;
   }
 
@@ -1182,6 +1265,7 @@ a:hover {
 
   .heading-4 {
     font-size: 8rem;
+    display: flex;
   }
 
   .textbox-100-lead {
@@ -1323,8 +1407,34 @@ a:hover {
     max-width: 90%;
   }
 
-  .karte, .back-karte, .image-17 {
+  .karte, .back-karte {
     border-radius: 50px;
+  }
+
+  .back-karte:hover {
+    border-radius: 57px;
+    transform: none;
+  }
+
+  .contact-button:hover {
+    box-shadow: 0 0 10px 2px rgba(24, 97, 25, .55);
+  }
+
+  .link-block-2:hover {
+    box-shadow: 0 0 10px 4px rgba(24, 97, 25, .55);
+  }
+
+  .image-17 {
+    border-radius: 50px;
+  }
+
+  .start {
+    min-height: 105vh;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 
   .navcenterbox-cv {
@@ -1359,6 +1469,11 @@ a:hover {
     max-width: 60vw;
   }
 
+  .navcenterbox {
+    grid-column-gap: .8vw;
+    grid-row-gap: .8vw;
+  }
+
   .namezusatz {
     font-size: 1.5rem;
   }
@@ -1385,6 +1500,10 @@ a:hover {
     padding-right: 10%;
   }
 
+  .bildbox5-image-u, .bildbox5-image-d {
+    border-radius: 9px;
+  }
+
   .bildbox3-al {
     max-height: 50vh;
   }
@@ -1399,8 +1518,10 @@ a:hover {
   }
 
   .navobenprojekte {
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .greenbox-start {
@@ -1542,6 +1663,13 @@ a:hover {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .navobenprojekte-blish {
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1575,6 +1703,11 @@ a:hover {
 
   .gridumrandung {
     border-radius: 10px;
+  }
+
+  .navcenterbox {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
   }
 
   .image {
@@ -1673,6 +1806,10 @@ a:hover {
     max-width: 68%;
   }
 
+  .bildbox5-image-u, .bildbox5-image-d {
+    border-radius: 6px;
+  }
+
   .bildbox3-al {
     max-height: 40vh;
   }
@@ -1694,8 +1831,8 @@ a:hover {
   }
 
   .navobenprojekte {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .greenbox-start {
@@ -1828,6 +1965,37 @@ a:hover {
     margin-bottom: 5%;
     padding-bottom: 0%;
   }
+
+  .navcenterbox-home {
+    grid-column-gap: 0vw;
+    grid-row-gap: 0vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start-link {
+    display: none;
+  }
+
+  .logo-2 {
+    max-width: 3rem;
+  }
+
+  .pfeil-zur-ck, .pfeil-weiter {
+    display: block;
+  }
+
+  .link-block-3, .link-block-4 {
+    display: none;
+  }
+
+  .navcenterbox-start {
+    justify-content: center;
+  }
+
+  .bstickt-link {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1870,6 +2038,14 @@ a:hover {
 
   .beschreibung {
     font-size: .8rem;
+  }
+
+  .navcenterbox {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0%;
   }
 
   .buttom {
@@ -1994,6 +2170,11 @@ a:hover {
     padding-right: 5%;
   }
 
+  .bildbox3 {
+    margin-bottom: 0%;
+    overflow: hidden;
+  }
+
   .image-6, .image-7 {
     max-height: 40vh;
   }
@@ -2079,6 +2260,7 @@ a:hover {
 
   .bildbox3-al {
     max-height: 25vh;
+    border-radius: 6px;
   }
 
   .titelei-al {
@@ -2087,9 +2269,12 @@ a:hover {
   }
 
   .navobenprojekte {
-    grid-row-gap: 16px;
-    flex-direction: column;
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
+    flex-direction: row;
     padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .greenbox-start {
@@ -2338,6 +2523,50 @@ a:hover {
 
   .navcenterbox-cv {
     margin-bottom: 15%;
+    padding-top: 0%;
+  }
+
+  .navcenterbox-home {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    flex-direction: row;
+  }
+
+  .start-link {
+    display: block;
+  }
+
+  .logo-2 {
+    max-width: 1.5rem;
+  }
+
+  .pfeil-zur-ck, .pfeil-weiter {
+    max-width: 2em;
+    display: block;
+  }
+
+  .link-next, .link-back {
+    display: none;
+  }
+
+  .link-block-3, .link-block-4 {
+    display: block;
+  }
+
+  .navobenprojekte-blish {
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
+    flex-direction: row;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 5%;
+  }
+
+  .navcenterbox-start {
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
+    flex-direction: column-reverse;
+    align-items: center;
     padding-top: 0%;
   }
 }
