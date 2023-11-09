@@ -1217,6 +1217,8 @@ a:hover {
 
   .textbox-100 {
     max-width: 1440px;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   .textbox-50 {
