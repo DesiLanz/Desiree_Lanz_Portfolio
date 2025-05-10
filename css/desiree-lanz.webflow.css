@@ -92,11 +92,11 @@ a:hover {
 }
 
 .navoben {
-  width: 100%;
-  min-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 100%;
   display: block;
 }
 
@@ -113,9 +113,9 @@ a:hover {
 }
 
 .textbox-50 {
-  max-width: 50vw;
   flex-direction: column;
   justify-content: center;
+  max-width: 50vw;
   margin: 20% auto 0%;
   display: flex;
 }
@@ -128,15 +128,14 @@ a:hover {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
-  align-content: space-around;
-  justify-content: space-around;
+  place-content: space-around;
 }
 
 .grid-1 {
-  min-width: 100%;
   border-right: 1px solid #000;
   flex-direction: column;
   align-items: center;
+  min-width: 100%;
   margin: 6% auto;
   padding: 4% 10%;
   display: flex;
@@ -172,31 +171,35 @@ a:hover {
 }
 
 .navunten {
-  width: 100%;
-  min-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 100%;
   margin-bottom: 10%;
   display: flex;
 }
 
 .buttom {
-  width: 100vw;
-  min-width: 100vw;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
+  min-width: 100vw;
   padding-top: 5%;
   padding-bottom: 10%;
   display: flex;
 }
 
 .buttomlinks {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  text-align: center;
+  flex-flow: column;
   width: 85%;
   max-width: 85%;
-  text-align: center;
   padding-left: 15%;
+  display: flex;
 }
 
 .btt {
@@ -226,21 +229,21 @@ a:hover {
 }
 
 .link-btt {
-  width: 15%;
-  max-width: 15%;
   flex: 0 auto;
   justify-content: center;
   align-items: center;
+  width: 15%;
+  max-width: 15%;
   display: flex;
   transform: rotate(-90deg);
 }
 
 .titelei {
-  height: 70vh;
-  max-height: 70vh;
   grid-column-gap: 5%;
   justify-content: center;
   align-items: center;
+  height: 70vh;
+  max-height: 70vh;
   display: flex;
 }
 
@@ -259,19 +262,19 @@ a:hover {
 }
 
 .home-titel {
-  height: 80vh;
-  max-height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
+  max-height: 80vh;
   display: flex;
 }
 
 .name-1 {
-  width: 100vw;
-  max-width: 100vw;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 100vw;
+  max-width: 100vw;
   display: flex;
   transform: translate(25px);
 }
@@ -300,12 +303,12 @@ a:hover {
 }
 
 .section-black {
-  min-height: 105vh;
   color: #fff;
   background-color: #000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
   display: flex;
   overflow: hidden;
 }
@@ -316,12 +319,17 @@ a:hover {
 
 .kartenbox {
   grid-column-gap: 5%;
+  grid-row-gap: 16px;
+  flex-flow: wrap;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
   margin-top: 6%;
   padding-left: 15%;
   padding-right: 15%;
-  display: flex;
+  display: grid;
 }
 
 .projektkarte {
@@ -335,10 +343,10 @@ a:hover {
 }
 
 .section-white {
-  max-height: 100vh;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
+  max-height: 100vh;
   padding-right: 0;
   display: flex;
   overflow: hidden;
@@ -359,10 +367,10 @@ a:hover {
 }
 
 ._2-links {
-  min-width: 100%;
   grid-column-gap: 15%;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
   margin-top: 6%;
   display: flex;
 }
@@ -372,16 +380,20 @@ a:hover {
 }
 
 .bildbbox1 {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
   margin-top: 10%;
   padding-left: 15%;
   padding-right: 15%;
+  display: flex;
 }
 
 .bildbox2 {
-  max-height: 80vh;
   grid-column-gap: 2%;
   justify-content: center;
   align-items: center;
+  max-height: 80vh;
   margin-top: 2%;
   padding-left: 15%;
   padding-right: 15%;
@@ -409,11 +421,11 @@ a:hover {
 }
 
 .bildbox3 {
-  max-height: 80vh;
-  min-height: 50vh;
   grid-column-gap: 3%;
   justify-content: center;
   align-items: center;
+  min-height: 50vh;
+  max-height: 80vh;
   margin-top: 10%;
   margin-bottom: 10%;
   display: flex;
@@ -432,10 +444,10 @@ a:hover {
 }
 
 .grid-2, .grid-3, .grid-4 {
-  min-width: 100%;
   border-right: 1px solid #000;
   flex-direction: column;
   align-items: center;
+  min-width: 100%;
   margin: 6% auto;
   padding: 4% 10%;
   display: flex;
@@ -446,10 +458,10 @@ a:hover {
 }
 
 .bildbox2-2 {
-  max-height: 80vh;
   grid-column-gap: 2%;
   justify-content: center;
   align-items: center;
+  max-height: 80vh;
   margin-top: 2%;
   padding-left: 15%;
   padding-right: 15%;
@@ -511,10 +523,10 @@ a:hover {
 }
 
 .bildbox2-june {
-  max-height: 80vh;
   grid-column-gap: 2%;
   justify-content: space-around;
   align-items: flex-start;
+  max-height: 80vh;
   margin-top: 2%;
   padding-left: 15%;
   padding-right: 15%;
@@ -555,19 +567,19 @@ a:hover {
 }
 
 .bildbox5-image-u {
-  max-width: 17%;
   border-radius: 16px;
+  max-width: 17%;
 }
 
 .bildbox5-image-d {
-  max-width: 17%;
   border-radius: 16px;
+  max-width: 17%;
   margin-top: 8%;
 }
 
 .bildbox3-al {
-  max-height: 70vh;
   border-radius: 20px;
+  max-height: 70vh;
 }
 
 .image-10 {
@@ -576,11 +588,11 @@ a:hover {
 }
 
 .titelei-al {
-  height: 70vh;
-  max-height: 70vh;
   grid-column-gap: 5%;
   justify-content: center;
   align-items: center;
+  height: 70vh;
+  max-height: 70vh;
   display: flex;
 }
 
@@ -590,23 +602,23 @@ a:hover {
 }
 
 .navobenprojekte {
-  width: 100%;
-  min-width: 100%;
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  min-width: 100%;
   padding-left: 8%;
   padding-right: 8%;
   display: flex;
 }
 
 .greenbox-start {
-  min-height: 105vh;
   background-color: #269b28;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  min-height: 105vh;
   padding-bottom: 5%;
   display: flex;
   overflow: hidden;
@@ -630,15 +642,15 @@ a:hover {
 }
 
 .div-block {
-  min-width: 60vw;
   align-self: flex-end;
+  min-width: 60vw;
   padding-bottom: 10%;
 }
 
 .face-desi {
   z-index: 5;
-  max-width: 30%;
   min-width: 30%;
+  max-width: 30%;
   padding-top: 0%;
   position: relative;
   transform: translate(-20%, -22%);
@@ -649,13 +661,13 @@ a:hover {
 }
 
 .redbox-wein {
-  max-height: none;
-  min-height: 105vh;
   grid-column-gap: 15%;
   grid-row-gap: 15%;
   background-color: #e71a1a;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
+  max-height: none;
   padding: 5% 15%;
   display: flex;
 }
@@ -671,10 +683,10 @@ a:hover {
 }
 
 .faktenbox {
-  max-width: 60%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 60%;
   display: flex;
 }
 
@@ -685,37 +697,37 @@ a:hover {
 }
 
 .bluebox {
-  max-height: none;
-  min-height: 105vh;
   background-color: #3787ff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
+  max-height: none;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 
 .programmebox {
-  min-width: 100%;
   grid-column-gap: 6%;
   grid-row-gap: 0%;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  min-width: 100%;
   padding-left: 20%;
   padding-right: 20%;
   display: flex;
 }
 
 .programm {
-  max-width: 25%;
   background-color: #fff;
   border: 3px solid #000;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 25%;
   margin-top: 5%;
   padding: 2%;
   display: flex;
@@ -741,12 +753,12 @@ a:hover {
 }
 
 .orangebox {
-  max-height: 105vh;
-  min-height: 105vh;
   background-color: #fb720f;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
+  max-height: 105vh;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
@@ -758,9 +770,9 @@ a:hover {
 }
 
 .baytf-box {
-  min-width: 100%;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
   padding-left: 15%;
   padding-right: 15%;
   display: flex;
@@ -768,9 +780,9 @@ a:hover {
 
 .smilebox-oben {
   z-index: 3;
-  min-width: 100%;
   justify-content: space-between;
   align-items: center;
+  min-width: 100%;
   padding: 3% 6%;
   display: flex;
   transform: translate(0, 10%);
@@ -790,50 +802,50 @@ a:hover {
 
 .smilebox-unten {
   z-index: 2;
-  min-width: 100%;
   justify-content: space-between;
   align-items: center;
+  min-width: 100%;
   padding: 3% 6%;
   display: flex;
   transform: translate(0, -10%);
 }
 
 .yellowbox {
-  min-height: 105vh;
   background-color: #fbb70a;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 
 .zeitbox {
-  min-width: 100%;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   justify-content: center;
+  min-width: 100%;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
 }
 
 .zeitbox-3er {
-  max-width: 50%;
-  min-width: 40%;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   flex-direction: column;
   justify-content: flex-end;
+  min-width: 40%;
+  max-width: 50%;
   display: flex;
 }
 
 .zeitbox-1er {
-  max-width: 50%;
   border: 3px solid #000;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  max-width: 50%;
   padding: 5%;
   display: flex;
 }
@@ -863,34 +875,34 @@ a:hover {
 }
 
 .pinkbox {
-  min-height: 105vh;
   background-color: #f5298b;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 
 .zeitbox-2er {
-  max-width: 50%;
-  min-width: 50%;
   grid-row-gap: 2vw;
   flex-direction: column;
   justify-content: flex-end;
   align-items: stretch;
+  min-width: 50%;
+  max-width: 50%;
   display: flex;
 }
 
 .firmenbox {
-  max-width: 100%;
-  min-height: 40vh;
-  min-width: 100%;
   border: 3px solid #000;
   border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 40vh;
   padding: 5%;
   display: flex;
 }
@@ -944,42 +956,40 @@ a:hover {
 }
 
 .redbox {
-  max-height: none;
-  min-height: 105vh;
   background-color: #e71a1a;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
+  max-height: none;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 
 .greenbox {
-  max-height: none;
-  min-height: 105vh;
   background-color: #269b28;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 105vh;
+  max-height: none;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 
 .footer-cv {
-  min-width: 100%;
   grid-column-gap: 5vw;
   grid-row-gap: 5vw;
   flex: 1;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
   display: flex;
 }
 
 .gameboy {
-  width: .715em;
-  height: 70vh;
   grid-column-gap: 2vh;
   grid-row-gap: 2vh;
   border: 4px solid #000;
@@ -987,15 +997,17 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  width: .715em;
+  height: 70vh;
   padding: 3%;
   font-size: 70vh;
   display: flex;
 }
 
 .karte {
+  border-radius: 42px;
   width: .715em;
   height: 70vh;
-  border-radius: 42px;
   font-size: 70vh;
   display: flex;
 }
@@ -1007,15 +1019,15 @@ a:hover {
 
 .back-karte:hover {
   transform: rotate(6deg);
-  box-shadow: 1px 1px 20px 11px rgba(163, 68, 1, .6);
+  box-shadow: 1px 1px 20px 11px #a3440199;
 }
 
 .gameboy-screen {
-  min-height: 45%;
   background-color: #fff;
   border: 4px solid #000;
   justify-content: center;
   align-items: center;
+  min-height: 45%;
   padding: 10%;
   display: flex;
 }
@@ -1028,12 +1040,12 @@ a:hover {
 }
 
 .contact-button {
-  width: 7vh;
-  height: 1em;
   background-color: #000;
   border-radius: 80px;
   justify-content: center;
   align-items: center;
+  width: 7vh;
+  height: 1em;
   padding: 12px;
   font-size: 7vh;
   display: flex;
@@ -1058,12 +1070,12 @@ a:hover {
 }
 
 .link-block-2 {
-  width: 12vh;
-  height: 1em;
   background-color: #000;
   border-radius: 80px;
   justify-content: center;
   align-items: center;
+  width: 12vh;
+  height: 1em;
   padding: 4%;
   font-size: 12vh;
   display: flex;
@@ -1078,9 +1090,9 @@ a:hover {
 }
 
 .image-17 {
+  border-radius: 42px;
   width: .715em;
   height: 70vh;
-  border-radius: 42px;
   font-size: 70vh;
 }
 
@@ -1100,8 +1112,8 @@ a:hover {
 }
 
 .header-cv {
-  min-width: 100vw;
   justify-content: space-between;
+  min-width: 100vw;
   margin-top: 1px;
   padding-left: 15%;
   padding-right: 15%;
@@ -1117,20 +1129,20 @@ a:hover {
 }
 
 .leer {
-  min-height: 1vh;
-  min-width: 100vw;
   flex: 1;
   align-self: stretch;
+  min-width: 100vw;
+  min-height: 1vh;
 }
 
 .shadow {
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 15px 1px #00000026;
 }
 
 .image-18 {
-  max-height: 1.5rem;
-  max-width: 1.5rem;
   flex: 0 auto;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
 }
 
 .navcenterbox-home {
@@ -1143,9 +1155,9 @@ a:hover {
 }
 
 .logo-2 {
-  max-height: 1.5rem;
-  max-width: 1.5rem;
   flex: 0 auto;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
 }
 
 .pfeil-zur-ck {
@@ -1164,12 +1176,12 @@ a:hover {
 }
 
 .navobenprojekte-blish {
-  width: 100%;
-  min-width: 100%;
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  min-width: 100%;
   padding-left: 8%;
   padding-right: 8%;
   display: flex;
@@ -1194,45 +1206,45 @@ a:hover {
 }
 
 .spline {
-  max-width: 25vw;
   justify-content: center;
   align-items: center;
+  max-width: 25vw;
   display: flex;
   overflow: hidden;
 }
 
 .spline-scene-2 {
-  width: 70%;
   justify-content: center;
   align-items: center;
+  width: 70%;
   display: flex;
 }
 
 .spline-scene-3 {
-  width: 72%;
   justify-content: center;
   align-items: center;
+  width: 72%;
   display: flex;
 }
 
 .footer-cv-spline {
-  min-width: 100%;
   grid-column-gap: 4vw;
   grid-row-gap: 4vw;
   flex-direction: column;
   flex: 1;
   justify-content: space-between;
   align-items: stretch;
+  min-width: 100%;
   display: flex;
 }
 
 .spline-block-o {
-  max-height: 85vh;
-  min-width: 100%;
   grid-column-gap: 6vw;
   grid-row-gap: 6vw;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
+  max-height: 85vh;
   padding-top: 10%;
   display: flex;
   overflow: hidden;
@@ -1245,16 +1257,16 @@ a:hover {
 }
 
 .link-block-6 {
-  min-height: 8vh;
-  min-width: 6vh;
   justify-content: center;
   align-items: center;
+  min-width: 6vh;
+  min-height: 8vh;
   display: flex;
 }
 
 .image-19 {
-  min-height: 100%;
   min-width: 100%;
+  min-height: 100%;
 }
 
 .div-block-4 {
@@ -1304,17 +1316,17 @@ a:hover {
 }
 
 .spline-r {
-  max-width: 25vw;
   justify-content: center;
   align-items: center;
+  max-width: 25vw;
   display: flex;
   overflow: hidden;
 }
 
 .spline-scenetest {
-  width: 290px;
   justify-content: center;
   align-items: center;
+  width: 290px;
   padding-left: 0;
   display: flex;
 }
@@ -1322,6 +1334,14 @@ a:hover {
 .splinetest {
   display: block;
   overflow: hidden;
+}
+
+.spacer15 {
+  height: 15vh;
+}
+
+.spacer5 {
+  height: 5vh;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1369,19 +1389,19 @@ a:hover {
   }
 
   .titelei {
-    min-width: 100%;
     grid-column-gap: 5%;
     justify-content: center;
+    min-width: 100%;
   }
 
   .titel {
-    width: auto;
     flex: 0 auto;
+    width: auto;
   }
 
   .home-titel {
-    max-width: 1440px;
     align-self: center;
+    max-width: 1440px;
     font-size: 2.3rem;
   }
 
@@ -1424,14 +1444,14 @@ a:hover {
   }
 
   .titelei-al {
-    min-width: 100%;
     grid-column-gap: 5%;
     justify-content: center;
+    min-width: 100%;
   }
 
   .titel--al {
-    width: auto;
     flex: 0 auto;
+    width: auto;
   }
 
   .greenbox-start {
@@ -1449,8 +1469,8 @@ a:hover {
   }
 
   .face-desi {
-    max-width: 26%;
     min-width: 26%;
+    max-width: 26%;
     padding-top: 3%;
     transform: translate(0%, -26%);
   }
@@ -1479,39 +1499,39 @@ a:hover {
   }
 
   .yellowbox {
-    min-height: 100vh;
     background-color: #fbb70a;
     justify-content: center;
+    min-height: 100vh;
     display: flex;
   }
 
   .zeitbox {
-    min-width: 100%;
     grid-column-gap: 2.5vw;
     grid-row-gap: 2.5vw;
     justify-content: center;
     align-items: stretch;
+    min-width: 100%;
     padding: 5%;
     display: flex;
   }
 
   .zeitbox-3er {
-    max-width: 50%;
-    min-width: 45%;
     grid-row-gap: 3vw;
     flex-direction: column;
     justify-content: flex-end;
     align-items: stretch;
+    min-width: 45%;
+    max-width: 50%;
     display: flex;
   }
 
   .zeitbox-1er {
-    max-width: 100%;
-    min-width: 45%;
     border: 3px solid #000;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    min-width: 45%;
+    max-width: 100%;
     padding: 5%;
     display: flex;
   }
@@ -1539,10 +1559,10 @@ a:hover {
   }
 
   .zeitbox-2er {
-    max-width: 100%;
-    min-width: 45%;
     justify-content: center;
     align-items: center;
+    min-width: 45%;
+    max-width: 100%;
     padding: 0%;
     display: flex;
   }
@@ -1566,11 +1586,11 @@ a:hover {
   }
 
   .contact-button:hover {
-    box-shadow: 0 0 10px 2px rgba(24, 97, 25, .55);
+    box-shadow: 0 0 10px 2px #1861198c;
   }
 
   .link-block-2:hover {
-    box-shadow: 0 0 10px 4px rgba(24, 97, 25, .55);
+    box-shadow: 0 0 10px 4px #1861198c;
   }
 
   .image-17 {
@@ -1578,17 +1598,17 @@ a:hover {
   }
 
   .start {
-    min-height: 105vh;
     flex-direction: column;
     align-items: stretch;
+    min-height: 105vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
   }
 
   .navcenterbox-cv {
-    min-width: 100vw;
     flex-direction: column;
+    min-width: 100vw;
   }
 
   .cv-link.datum {
@@ -1688,18 +1708,18 @@ a:hover {
   }
 
   .face-desi {
-    max-width: 50%;
     min-width: 50%;
+    max-width: 50%;
     position: static;
     right: 10px;
     transform: translate(-30%, -50%);
   }
 
   .redbox-wein {
-    min-height: auto;
     grid-column-gap: 6%;
     grid-row-gap: 6%;
     align-items: flex-start;
+    min-height: auto;
     padding: 10% 15% 15% 5%;
   }
 
@@ -1725,9 +1745,9 @@ a:hover {
   }
 
   .programm {
-    max-width: 33%;
-    min-width: 30%;
     border-width: 2px;
+    min-width: 30%;
+    max-width: 33%;
   }
 
   .orangebox {
@@ -1767,16 +1787,16 @@ a:hover {
   }
 
   .gameboy {
-    height: 50vh;
     grid-column-gap: 1.5vh;
     grid-row-gap: 1.5vh;
     border-radius: 30px 30px 50px;
+    height: 50vh;
     font-size: 50vh;
   }
 
   .karte {
-    height: 50vh;
     border-radius: 30px;
+    height: 50vh;
     font-size: 50vh;
   }
 
@@ -1804,8 +1824,8 @@ a:hover {
   }
 
   .image-17 {
-    height: 50vh;
     border-radius: 30px;
+    height: 50vh;
     font-size: 50vh;
   }
 
@@ -2078,15 +2098,15 @@ a:hover {
   }
 
   .gameboy {
-    height: 54vw;
     border-width: 2px;
     border-radius: 20px 20px 30px;
+    height: 54vw;
     font-size: 48vw;
   }
 
   .karte {
-    height: 48vw;
     border-radius: 20px;
+    height: 48vw;
     font-size: 48vw;
   }
 
@@ -2117,8 +2137,8 @@ a:hover {
   }
 
   .image-17 {
-    height: 48vw;
     border-radius: 20px;
+    height: 48vw;
     font-size: 48vw;
   }
 
@@ -2150,8 +2170,8 @@ a:hover {
   }
 
   .logo-2 {
-    max-height: 3rem;
     max-width: 3rem;
+    max-height: 3rem;
   }
 
   .pfeil-zur-ck, .pfeil-weiter {
@@ -2263,8 +2283,8 @@ a:hover {
   }
 
   .buttomlinks {
-    max-width: 80%;
     text-align: left;
+    max-width: 80%;
     padding-left: 0%;
   }
 
@@ -2281,8 +2301,8 @@ a:hover {
   }
 
   .titelei {
-    max-height: 65vh;
     grid-row-gap: 4%;
+    max-height: 65vh;
   }
 
   .titel-karte {
@@ -2322,16 +2342,16 @@ a:hover {
   }
 
   .kartenbox {
-    width: 100%;
     grid-row-gap: 11px;
     flex-direction: column;
+    width: 100%;
     padding-left: 0%;
     padding-right: 0%;
   }
 
   .projektkarte {
-    max-width: 80%;
     text-align: center;
+    max-width: 80%;
   }
 
   .image-3 {
@@ -2448,10 +2468,8 @@ a:hover {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    align-content: start;
-    justify-content: stretch;
-    align-items: center;
-    justify-items: center;
+    place-content: start stretch;
+    place-items: center;
     margin-top: 30%;
     margin-bottom: 30%;
     display: grid;
@@ -2467,13 +2485,13 @@ a:hover {
   }
 
   .bildbox3-al {
-    max-height: 25vh;
     border-radius: 6px;
+    max-height: 25vh;
   }
 
   .titelei-al {
-    max-height: 65vh;
     grid-row-gap: 4%;
+    max-height: 65vh;
   }
 
   .navobenprojekte {
@@ -2503,26 +2521,26 @@ a:hover {
   }
 
   .face-desi.mobile {
-    max-width: 70%;
     min-width: auto;
+    max-width: 70%;
     margin-bottom: 10%;
     position: static;
   }
 
   .redbox-wein {
-    max-height: none;
-    min-height: auto;
     grid-column-gap: 0%;
     grid-row-gap: 0%;
     flex-direction: column;
     align-items: stretch;
+    min-height: auto;
+    max-height: none;
     padding: 20% 5%;
     overflow: visible;
   }
 
   .weinflasche {
-    min-width: 100%;
     justify-content: center;
+    min-width: 100%;
     margin-bottom: 30%;
     margin-right: 0%;
     padding-top: 0%;
@@ -2531,8 +2549,8 @@ a:hover {
   }
 
   .wein {
-    max-height: none;
     max-width: 35%;
+    max-height: none;
   }
 
   .faktenbox {
@@ -2551,12 +2569,12 @@ a:hover {
   }
 
   .programm {
-    max-width: none;
-    min-width: 100%;
     grid-column-gap: 5%;
     grid-row-gap: 5%;
     flex-direction: row;
     align-items: flex-start;
+    min-width: 100%;
+    max-width: none;
     padding: 4% 3%;
   }
 
@@ -2604,15 +2622,15 @@ a:hover {
   }
 
   .zeitbox-3er {
-    max-width: 100%;
-    min-width: 100%;
     align-items: flex-start;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .zeitbox-1er {
-    max-width: 100%;
     border-width: 2px;
     align-self: stretch;
+    max-width: 100%;
   }
 
   .datumbox {
@@ -2633,15 +2651,15 @@ a:hover {
   }
 
   .zeitbox-2er {
-    max-width: 100%;
-    min-width: 100%;
     grid-column-gap: 3vw;
     grid-row-gap: 3vw;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .firmenbox {
-    min-height: 25vh;
     border-width: 2px;
+    min-height: 25vh;
     display: none;
   }
 
@@ -2674,8 +2692,8 @@ a:hover {
   }
 
   .gameboy {
-    height: 90vw;
     border-width: 3px;
+    height: 90vw;
     padding: 5%;
     font-size: 85vw;
   }
@@ -2745,8 +2763,8 @@ a:hover {
   }
 
   .logo-2 {
-    max-height: 1.5rem;
     max-width: 1.5rem;
+    max-height: 1.5rem;
   }
 
   .pfeil-zur-ck, .pfeil-weiter {
@@ -2780,9 +2798,9 @@ a:hover {
   }
 
   .spline {
-    height: 450px;
-    max-width: 100vw;
     align-items: flex-start;
+    max-width: 100vw;
+    height: 450px;
     position: static;
   }
 
@@ -2797,9 +2815,9 @@ a:hover {
   }
 
   .spline-scene-3 {
-    height: 370px;
     justify-content: center;
     align-items: center;
+    height: 370px;
     display: flex;
   }
 
@@ -2811,12 +2829,12 @@ a:hover {
   }
 
   .spline-block-o {
-    max-height: none;
     grid-column-gap: 0vw;
     grid-row-gap: 0vw;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    max-height: none;
     padding-top: 10vh;
     position: static;
   }
@@ -2825,12 +2843,8 @@ a:hover {
     grid-column-gap: 3vw;
     grid-row-gap: 3vw;
     flex-direction: column;
-    position: -webkit-sticky;
     position: sticky;
-    top: auto;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    inset: auto 0% 0%;
   }
 
   .cv-link {
@@ -2864,8 +2878,7 @@ a:hover {
 
 #w-node-df7b4546-33bf-0b9f-0551-7722b4433c54-5c7a0cc7 {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 #w-node-c0abda2e-5e10-8555-5e0c-bbc3f32e2555-5c7a0cc7, #w-node-_3b4583ea-b08d-3961-c4dc-5da2040d1cf4-5c7a0cc7, #w-node-_72176da6-f28a-3b79-5028-bf8d1325cd89-5c7a0cc7 {
@@ -2874,8 +2887,7 @@ a:hover {
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-45145248, #w-node-d8ca329a-6823-4823-c8be-e18e265af77f-45145248 {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af784-45145248, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-45145248 {
@@ -2884,14 +2896,12 @@ a:hover {
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-3da78beb {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af77f-3da78beb {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: auto;
-  justify-self: auto;
+  place-self: auto;
 }
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af784-3da78beb, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-3da78beb {
@@ -2900,19 +2910,54 @@ a:hover {
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-73053923, #w-node-d8ca329a-6823-4823-c8be-e18e265af77f-73053923 {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 #w-node-d8ca329a-6823-4823-c8be-e18e265af784-73053923, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-73053923 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
+#w-node-d8ca329a-6823-4823-c8be-e18e265af77a-dd10c270, #w-node-d8ca329a-6823-4823-c8be-e18e265af77f-dd10c270 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af784-dd10c270, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-dd10c270 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af77a-5846708b {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af77f-5846708b {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: auto;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af784-5846708b, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-5846708b {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af77a-f83ff727 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af77f-f83ff727 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: auto;
+}
+
+#w-node-d8ca329a-6823-4823-c8be-e18e265af784-f83ff727, #w-node-d8ca329a-6823-4823-c8be-e18e265af789-f83ff727 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
 @media screen and (min-width: 1440px) {
-  #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-45145248, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-3da78beb, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-73053923 {
+  #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-45145248, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-3da78beb, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-73053923, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-dd10c270, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-5846708b, #w-node-d8ca329a-6823-4823-c8be-e18e265af77a-f83ff727 {
     grid-area: span 1 / span 1 / span 1 / span 1;
-    align-self: center;
-    justify-self: center;
+    place-self: center;
   }
 }
 
